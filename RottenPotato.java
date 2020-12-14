@@ -20,8 +20,9 @@ public class RottenPotato {
         double add;
         double sum = 0;
         for (int c = 0; c<= ratings.length - 1; c++) {
-            add = ratings[movie][c];
-            sum = sum + add / (c+1);
+            add = ratings[c][movie];
+            sum = sum + add;
+   
         }
         sum = sum / ratings.length;
         return sum;
